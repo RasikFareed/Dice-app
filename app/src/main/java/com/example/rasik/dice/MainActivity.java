@@ -1,3 +1,4 @@
+
 package com.example.rasik.dice;
 
 import android.media.AudioAttributes;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
             dice_picture = (ImageView) findViewById(R.id.dice_picture);
            dice_picture.setOnClickListener(new HandleClick());
             handler=new Handler(callback);
-           // dice_picture.setOnTouchListener(this);
+          // dice_picture.setOnTouchListener(this);
 
 
         }
@@ -125,21 +126,25 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
                 switch(rng.nextInt(6)+1) {
                     case 1:
                         dice_picture.setImageResource(R.drawable.one);
+                        animate(mPrevAngle, -134.6525421817438, 0);
                         break;
                     case 2:
                         dice_picture.setImageResource(R.drawable.two);
+                        animate(mPrevAngle, -134.6525421817438, 0);
                         break;
                     case 3:
                         dice_picture.setImageResource(R.drawable.three);
                         break;
                     case 4:
                         dice_picture.setImageResource(R.drawable.four);
+                        animate(mPrevAngle, -134.6525421817438, 0);
                         break;
                     case 5:
                         dice_picture.setImageResource(R.drawable.five);
                         break;
                     case 6:
                         dice_picture.setImageResource(R.drawable.six);
+                        animate(mPrevAngle, -134.6525421817438, 0);
                         break;
                     default:
                 }
